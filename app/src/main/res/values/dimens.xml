@@ -4,4 +4,9 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+
+    <dimen name="ic_search_width">24dp</dimen>
+    <dimen name="ic_search_height">24dp</dimen>
+
 </resources>
