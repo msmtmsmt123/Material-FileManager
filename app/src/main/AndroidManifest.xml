@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="stormouble.op.material_filemanager">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 
     <application
         android:name=".APP"
@@ -16,6 +21,10 @@
         <meta-data
             android:name="AA_DB_VERSION"
             android:value="1" />
+        <!--<meta-data-->
+            <!--android:name="BUG_HD_SDK_GENERAL_KEY"-->
+            <!--android:value="01bf707209ed76fe0674bd51d9dc9d3b" />-->
+
         <activity android:name=".ui.activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

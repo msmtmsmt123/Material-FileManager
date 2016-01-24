@@ -13,6 +13,7 @@ public class APP extends Application{
     public void onCreate() {
         super.onCreate();
         ActiveAndroid.initialize(this);
+        //FIR.init(this);
     }
 
     @Override

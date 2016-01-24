@@ -7,14 +7,13 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import stormouble.op.material_filemanager.R;
 import stormouble.op.material_filemanager.ui.adapter.HomeAdapter;
-import stormouble.op.material_filemanager.ui.base.BaseActivity;
 import stormouble.op.material_filemanager.ui.base.SwipeRefreshActivity;
 
 public class HomeActivity extends SwipeRefreshActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -72,7 +70,13 @@ public class HomeActivity extends SwipeRefreshActivity implements NavigationView
     }
 
     private void animateToolbar() {
-
+        if (mToolbar != null) {
+            Log.d("TAG", "mToolbar is not null");
+            View v = mToolbar.getChildAt(0);
+//            if (v != null && v instanceof TextView) {
+//                Logger.d("It is a TextView");
+//            }
+        }
     }
 
     private void setupDrawer() {
